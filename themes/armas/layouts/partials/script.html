@@ -5,9 +5,12 @@
         return obj[keys[ keys.length * Math.random() << 0]];
     };
 
+    const iconElement = document.querySelector('#icon');
+    iconElement.classList.add('spinner');
+    
     const changeIcon = function () {
         const icon = randomProperty(feather.icons);
-        document.querySelector('#icon').setAttribute('data-feather', icon.name);
+        iconElement.setAttribute('data-feather', icon.name);
     
         feather.replace({
             class: 'icon',

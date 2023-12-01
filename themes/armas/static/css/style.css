@@ -6,7 +6,7 @@ body {
     height: 100vh;
 }
 
-#icon {
+.spinner {
     animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
