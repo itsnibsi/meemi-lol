@@ -1,1 +1,1 @@
-html{width:100vw;height:100vh;overflow:hidden}body{display:flex;align-items:center;justify-content:center;height:100vh;background-color:#fff}img{max-width:66%;max-height:66%}
+html{width:100vw;height:100vh;overflow:hidden}body{display:flex;align-items:center;justify-content:center;height:100vh;background-color:#fff}p{font-size:2rem}
