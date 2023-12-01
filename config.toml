@@ -1,6 +1,6 @@
 baseURL = "https://meemi.lol/"
 languageCode = "en-us"
-title = "Hey, you. You're finally awake."
+title = "meemi.lol"
 theme = "armas"
 
 [menu]
