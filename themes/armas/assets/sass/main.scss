@@ -37,18 +37,49 @@ p {
   align-items: center;
   gap: 2px;
   color: #fff;
-  font-size: 2rem;
-  font: 2.0rem Inconsolata, monospace;
+  font: 1.0rem Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
 }
 
 p::after {
   content: "";
   width: 10px;
-  height: 2rem;
+  height: 1rem;
   background: #fff;
   display: inline-block;
   animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1rem;
+  }  
+
+  p::after {
+    width: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  p::after {
+    width: 8px;
+    height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 2rem;
+  }
+
+  p::after {
+    width: 10px;
+    height: 2rem;
+  }
 }
 
 @keyframes cursor-blink {
