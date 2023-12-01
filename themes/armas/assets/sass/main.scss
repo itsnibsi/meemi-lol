@@ -41,9 +41,6 @@ body::after {
 }
 
 p {
-  display: flex;
-  align-items: center;
-  gap: 2px;
   color: #fff;
   font-size: 1rem;
   text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
@@ -53,7 +50,8 @@ p {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   text-align: center;
-  padding: 4rem;
+  max-width: 75%;
+  line-height: 1.2em;
 }
 
 @media only screen and(min-width: 1024px) {
@@ -218,7 +216,7 @@ p {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 0.15s infinite;
+  animation: flicker 1s infinite;
 }
 
 .crt::before {
