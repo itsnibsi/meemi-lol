@@ -1,24 +1,7 @@
 <script src="https://unpkg.com/feather-icons"></script>
 <script>
-    const randomProperty = function (obj) {
-        var keys = Object.keys(obj);
-        return obj[keys[ keys.length * Math.random() << 0]];
-    };
-
-    const iconElement = document.querySelector('#icon');
-    iconElement.classList.add('spinner');
-    
-    const changeIcon = function () {
-        const icon = randomProperty(feather.icons);
-        iconElement.setAttribute('data-feather', icon.name);
-    
-        feather.replace({
-            class: 'icon',
-            width: 64,
-            height: 64
-        });
-    };
-
-    changeIcon();
-    setInterval(() => changeIcon(), 5000);
+    feather.replace({
+        width: 32,
+        height: 32
+    });
 </script>
