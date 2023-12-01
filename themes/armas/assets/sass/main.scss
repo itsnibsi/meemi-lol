@@ -46,27 +46,18 @@ p {
   text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
   letter-spacing: 0.125em;
   animation-duration: 0.01s;
-  animation-name: textflicker;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   text-align: center;
   max-width: 75%;
   line-height: 1.2em;
   transform: translateZ(0);
+  user-select: none;
 }
 
 @media only screen and(min-width: 1024px) {
   p {
     font-size: 2rem;
-  }
-}
-
-@keyframes textflicker {
-  from {
-    text-shadow: 1px 0 0 #39ff14, -2px 0 0 #75fa69;
-  }
-  to {
-    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
   }
 }
 
@@ -219,6 +210,7 @@ p {
   z-index: 2;
   pointer-events: none;
   animation: flicker 1s infinite;
+  transform: translateZ(0);
 }
 
 .crt::before {
@@ -236,4 +228,5 @@ p {
 }
 .crt {
   animation: textShadow 1.6s infinite;
+  transform: translateZ(0);
 }
