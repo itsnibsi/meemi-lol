@@ -1,1 +1,1 @@
-html{width:100vw;height:100vh;overflow:hidden}body{display:flex;align-items:center;justify-content:center;height:100vh;background-color:#fff}p{font-size:2rem}
+html{width:100vw;height:100vh;overflow:hidden}body{display:flex;align-items:center;justify-content:center;height:100vh;background-color:#fff}p{font-size:3rem;transform:scale(2);animation:pulse 1s linear infinite}@keyframes pulse{0%{transform:rotate(-359deg)scale(2)}70%{transform:rotate(-180deg)scale(3)}100%{transform:scale(2)rotate(0)}}
